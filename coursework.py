@@ -41,23 +41,4 @@ def count_user_unique_ips(logs):
     return {user: len(ips) for user, ips in user_ips.items()}
 logs = read_logs(file_path)
 
-# Завдання 1
-stat_period = get_stat_period(logs)
-print("Період статистики:", stat_period)
-
-# Завдання 2
-unique_users_count = count_unique_users(logs)
-print("Кількість унікальних користувачів:", unique_users_count)
-
-# Завдання 3
-user_connections = count_user_connections(logs)
-print("Кількість підключень для кожного користувача:", user_connections)
-
-# Завдання 4
-user_unique_ips = get_user_unique_ips(logs)
-print("Унікальні IP для кожного користувача:", user_unique_ips)
-
-# Завдання 5
-user_unique_ip_counts = count_user_unique_ips(logs)
-print("Кількість унікальних IP для кожного користувача:", user_unique_ip_counts)
 
