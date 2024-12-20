@@ -1,7 +1,6 @@
 from datetime import datetime
 from collections import defaultdict
 file_path = 'test_logs.txt'
-
 def parse_log_line(line):
     parts = line.strip().split(', ')
     log_data = {}
